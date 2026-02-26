@@ -1,0 +1,18 @@
+@"
+name: DevOps Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Echo message
+        run: echo "push detected on main branch! Workflow executed successfully"
+"@ | Set-Content -Encoding utf8 ".github\workflows\ci.yml"
