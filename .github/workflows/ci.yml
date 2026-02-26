@@ -1,4 +1,3 @@
-@"
 name: DevOps Test
 
 on:
@@ -15,4 +14,3 @@ jobs:
 
       - name: Echo message
         run: echo "push detected on main branch! Workflow executed successfully"
-"@ | Set-Content -Encoding utf8 ".github\workflows\ci.yml"
